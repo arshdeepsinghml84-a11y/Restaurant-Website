@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bella Vista Restaurant | Fine Italian, Continental & Indian Dining</title>
+<meta name="description" content="Bella Vista Restaurant offers a premium fine-dining experience blending Italian, Continental and Indian cuisine. Reserve your table today for an unforgettable meal.">
+<meta name="keywords" content="Bella Vista Restaurant, fine dining, Italian restaurant, Continental cuisine, Indian cuisine, restaurant reservations, luxury dining">
+<meta name="author" content="Bella Vista Restaurant">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Bella Vista Restaurant | Fine Dining Experience Like Never Before">
+<meta property="og:description" content="Experience luxury Italian, Continental & Indian dining at Bella Vista Restaurant. Book your table today.">
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:image" content="https://picsum.photos/id/292/1200/630">
+<meta property="og:url" content="https://www.bellavistarestaurant.com">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bella Vista Restaurant">
+<meta name="twitter:description" content="Fine Dining Experience Like Never Before.">
+<meta name="twitter:image" content="https://picsum.photos/id/292/1200/630">
+
+<link rel="icon" type="image/png" href="https://picsum.photos/id/292/64/64">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Bella Vista Restaurant",
+  "servesCuisine": ["Italian", "Continental", "Indian"],
+  "priceRange": "₹₹₹",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "12 Vista Lane, Marina District",
+    "addressLocality": "Mumbai",
+    "addressCountry": "IN"
+  },
+  "telephone": "+91-99999-99999",
+  "servesCuisine": "Italian, Continental, Indian",
+  "openingHours": "Mo-Su 11:00-23:00"
+}
+</script>
+<script>
+/* Apply saved / system theme before first paint to avoid a flash */
+(function(){try{var t=localStorage.getItem('bv-theme');if(!t&&window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)t='dark';if(t==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();
+</script>
+</head>
+<body>
+
+<!-- ================= LOADING SCREEN ================= -->
+<div id="loading-screen" aria-hidden="true">
+  <div class="loader-content">
+    <span class="loader-emblem">BV</span>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+</div>
+
+<!-- ================= SCROLL PROGRESS BAR ================= -->
+<div id="scroll-progress" role="presentation"></div>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="#home" class="logo" aria-label="Bella Vista Restaurant home">
+      <span class="logo-icon"><i class="fa-solid fa-utensils"></i></span>
+      <span class="logo-text">Bella Vista</span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Primary navigation">
+      <ul>
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#reservations" class="nav-link">Reservations</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button id="dark-mode-toggle" class="icon-btn" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <a href="#reservations" class="btn btn-primary header-cta">Book Table</a>
+      <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
+  <div class="hero-bg" style="background-image:url('https://picsum.photos/id/292/1920/1080');"></div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <p class="eyebrow reveal">Est. 2004 &middot; Marina District</p>
+    <h1 class="hero-title reveal"><span id="typing-text">Fine Dining Experience Like Never Before</span><span class="cursor">|</span></h1>
+    <p class="hero-subtitle reveal">Where Italian passion, Continental elegance and Indian spice meet on one table.</p>
+    <div class="hero-buttons reveal">
+      <a href="#reservations" class="btn btn-primary ripple">Reserve Table</a>
+      <a href="#menu" class="btn btn-outline ripple">View Menu</a>
+    </div>
+  </div>
+  <a href="#features" class="scroll-indicator" aria-label="Scroll down">
+    <span class="scroll-mouse"><span class="scroll-dot"></span></span>
+  </a>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section id="features" class="section features">
+  <div class="container">
+    <p class="section-eyebrow reveal">Why Choose Us</p>
+    <h2 class="section-title reveal">A Table Set With Care</h2>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+        <h3>Fresh Ingredients</h3>
+        <p>Sourced daily from trusted local farms, so every plate tastes exactly as it should.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><i class="fa-solid fa-utensils"></i></div>
+        <h3>Expert Chefs</h3>
+        <p>Award-winning chefs trained across Rome, Paris and Mumbai bring three cuisines to life.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+        <h3>Luxury Dining</h3>
+        <p>Warm lighting, curated music and handcrafted interiors made for slow, memorable evenings.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+        <h3>Fast Service</h3>
+        <p>Attentive staff and a streamlined kitchen mean your table is never left waiting.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section about">
+  <div class="container about-grid">
+    <div class="about-image reveal">
+      <img width="700" height="800" src="https://picsum.photos/id/1080/700/800" alt="Interior of Bella Vista Restaurant dining hall" loading="lazy">
+      <div class="about-badge">
+        <span class="badge-number">20+</span>
+        <span class="badge-label">Years of Excellence</span>
+      </div>
+    </div>
+    <div class="about-content reveal">
+      <p class="section-eyebrow">Our Story</p>
+      <h2 class="section-title">Crafted From Passion, Served With Pride</h2>
+      <p>Bella Vista opened its doors in 2004 with a simple mission: bring the warmth of an Italian trattoria, the polish of a Continental dining room and the soul of Indian home cooking to one address. Two decades later, that mission still guides every dish we plate.</p>
+      <p>Our kitchen blends heirloom recipes with modern technique, and our dining room is designed for everything from a quiet anniversary dinner to a lively family celebration.</p>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number" data-target="20">0</span><span class="stat-suffix">+</span>
+          <p>Years Serving</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span>
+          <p>Signature Dishes</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="1000">0</span><span class="stat-suffix">+</span>
+          <p>Happy Guests</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="5">0</span><span class="stat-suffix">★</span>
+          <p>Average Rating</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TODAY'S SPECIAL ================= -->
+<section class="section todays-special">
+  <div class="container special-banner reveal">
+    <div class="special-text">
+      <p class="section-eyebrow light">Chef's Recommendation</p>
+      <h2>Today's Special — Truffle Butter Risotto</h2>
+      <p>Slow-cooked arborio rice, wild mushrooms and shaved black truffle, finished tableside.</p>
+    </div>
+    <a href="#menu" class="btn btn-secondary ripple">Order Online</a>
+  </div>
+</section>
+
+<!-- ================= MENU ================= -->
+<section id="menu" class="section menu-section">
+  <div class="container">
+    <p class="section-eyebrow reveal">Our Menu</p>
+    <h2 class="section-title reveal">A Journey Across Three Cuisines</h2>
+
+    <div class="menu-search reveal">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="search" id="menu-search-input" placeholder="Search dishes... e.g. Pizza, Paneer, Pasta" aria-label="Search menu">
+    </div>
+
+    <div class="menu-filters reveal" role="group" aria-label="Menu categories">
+      <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-btn" data-filter="starters" aria-pressed="false">Starters</button>
+      <button class="filter-btn" data-filter="main" aria-pressed="false">Main Course</button>
+      <button class="filter-btn" data-filter="pizza" aria-pressed="false">Pizza</button>
+      <button class="filter-btn" data-filter="pasta" aria-pressed="false">Pasta</button>
+      <button class="filter-btn" data-filter="indian" aria-pressed="false">Indian</button>
+      <button class="filter-btn" data-filter="desserts" aria-pressed="false">Desserts</button>
+      <button class="filter-btn" data-filter="drinks" aria-pressed="false">Drinks</button>
+    </div>
+
+    <p class="sr-only" id="menu-status" role="status" aria-live="polite"></p>
+
+    <div class="menu-grid" id="menu-grid"><!-- injected by JS --></div>
+
+    <div class="menu-empty" id="menu-empty" hidden>
+      <p>No dishes match your search. Try a different keyword.</p>
+    </div>
+
+    <div class="menu-actions reveal">
+      <a href="assets/bella-vista-menu.pdf" download class="btn btn-outline ripple" id="download-menu-btn"><i class="fa-solid fa-file-arrow-down"></i> Download Menu PDF</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SPECIAL OFFERS ================= -->
+<section class="section offers">
+  <div class="container">
+    <p class="section-eyebrow reveal">Special Offers</p>
+    <h2 class="section-title reveal">Deals Worth Coming Back For</h2>
+    <div class="offers-grid">
+      <div class="offer-card reveal">
+        <span class="offer-tag">Weekend</span>
+        <h3>20% Off Weekend Dinner</h3>
+        <p>Every Friday to Sunday, evening seatings after 7 PM.</p>
+      </div>
+      <div class="offer-card reveal">
+        <span class="offer-tag">Pizza Night</span>
+        <h3>Buy 1 Get 1 Pizza</h3>
+        <p>Every Wednesday on our wood-fired classics menu.</p>
+      </div>
+      <div class="offer-card reveal">
+        <span class="offer-tag">Bill Above ₹2000</span>
+        <h3>Free Dessert</h3>
+        <p>Complimentary tiramisu or gulab jamun on every qualifying bill.</p>
+      </div>
+    </div>
+    <div class="countdown-wrap reveal">
+      <p>Weekend Offer Ends In</p>
+      <div class="countdown" id="countdown">
+        <div class="countdown-unit"><span id="cd-days">00</span><small>Days</small></div>
+        <div class="countdown-unit"><span id="cd-hours">00</span><small>Hours</small></div>
+        <div class="countdown-unit"><span id="cd-minutes">00</span><small>Mins</small></div>
+        <div class="countdown-unit"><span id="cd-seconds">00</span><small>Secs</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CHEFS ================= -->
+<section class="section chefs">
+  <div class="container">
+    <p class="section-eyebrow reveal">Meet The Team</p>
+    <h2 class="section-title reveal">The Hands Behind Every Dish</h2>
+    <div class="chefs-grid">
+      <div class="chef-card reveal">
+        <div class="chef-img"><img width="400" height="480" src="https://picsum.photos/id/1027/400/480" alt="Chef Marco Bellini" loading="lazy"></div>
+        <div class="chef-info">
+          <h3>Marco Bellini</h3>
+          <p class="chef-role">Executive Chef · Italian</p>
+          <p class="chef-exp">18 years experience</p>
+          <div class="chef-social">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="chef-card reveal">
+        <div class="chef-img"><img width="400" height="480" src="https://picsum.photos/id/1025/400/480" alt="Chef Ananya Rao" loading="lazy"></div>
+        <div class="chef-info">
+          <h3>Ananya Rao</h3>
+          <p class="chef-role">Head Chef · Indian Cuisine</p>
+          <p class="chef-exp">12 years experience</p>
+          <div class="chef-social">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="chef-card reveal">
+        <div class="chef-img"><img width="400" height="480" src="https://picsum.photos/id/1012/400/480" alt="Chef Daniel Cross" loading="lazy"></div>
+        <div class="chef-info">
+          <h3>Daniel Cross</h3>
+          <p class="chef-role">Sous Chef · Continental</p>
+          <p class="chef-exp">9 years experience</p>
+          <div class="chef-social">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section id="gallery" class="section gallery-section">
+  <div class="container">
+    <p class="section-eyebrow reveal">Gallery</p>
+    <h2 class="section-title reveal">A Look Inside Bella Vista</h2>
+    <div class="gallery-grid" id="gallery-grid">
+      <button class="gallery-item reveal" data-img="https://picsum.photos/id/292/800/1000" data-caption="Main dining hall"><img width="500" height="620" src="https://picsum.photos/id/292/500/620" alt="Bella Vista main dining hall" loading="lazy"></button>
+      <button class="gallery-item reveal" data-img="https://picsum.photos/id/1080/800/600" data-caption="Signature pasta plating"><img width="500" height="380" src="https://picsum.photos/id/1080/500/380" alt="Signature pasta plating" loading="lazy"></button>
+      <button class="gallery-item reveal" data-img="https://picsum.photos/id/431/800/1000" data-caption="Wood-fired kitchen"><img width="500" height="620" src="https://picsum.photos/id/431/500/620" alt="Bella Vista kitchen" loading="lazy"></button>
+      <button class="gallery-item reveal" data-img="https://picsum.photos/id/106/800/600" data-caption="Dessert selection"><img width="500" height="380" src="https://picsum.photos/id/106/500/380" alt="Dessert selection" loading="lazy"></button>
+      <button class="gallery-item reveal" data-img="https://picsum.photos/id/225/800/1000" data-caption="Private event setup"><img width="500" height="620" src="https://picsum.photos/id/225/500/620" alt="Private event setup" loading="lazy"></button>
+      <button class="gallery-item reveal" data-img="https://picsum.photos/id/163/800/600" data-caption="Rooftop seating at dusk"><img width="500" height="380" src="https://picsum.photos/id/163/500/380" alt="Rooftop seating at dusk" loading="lazy"></button>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" hidden>
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close preview"><i class="fa-solid fa-xmark"></i></button>
+  <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+  <img src="" alt="" id="lightbox-img">
+  <p id="lightbox-caption"></p>
+  <button class="lightbox-next" id="lightbox-next" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+
+<!-- ================= RESERVATIONS ================= -->
+<section id="reservations" class="section reservations">
+  <div class="container reservations-grid">
+    <div class="reservations-info reveal">
+      <p class="section-eyebrow">Reservations</p>
+      <h2 class="section-title">Reserve Your Table</h2>
+      <p>Tell us the occasion and we'll set the table. We will confirm your booking by phone or email.</p>
+      <ul class="reservation-perks">
+        <li><i class="fa-solid fa-check"></i> Free cancellation up to 2 hours before</li>
+        <li><i class="fa-solid fa-check"></i> Birthday & anniversary setups on request</li>
+        <li><i class="fa-solid fa-check"></i> Private dining for groups of 10+</li>
+      </ul>
+    </div>
+    <form class="reservation-form reveal" id="reservation-form" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="res-name">Full Name</label>
+          <input type="text" id="res-name" name="name" required autocomplete="name">
+          <span class="error-msg" data-for="res-name"></span>
+        </div>
+        <div class="form-group">
+          <label for="res-phone">Phone</label>
+          <input type="tel" id="res-phone" name="phone" required autocomplete="tel">
+          <span class="error-msg" data-for="res-phone"></span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="res-email">Email</label>
+        <input type="email" id="res-email" name="email" required autocomplete="email">
+        <span class="error-msg" data-for="res-email"></span>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="res-date">Date</label>
+          <input type="date" id="res-date" name="date" required>
+          <span class="error-msg" data-for="res-date"></span>
+        </div>
+        <div class="form-group">
+          <label for="res-time">Time</label>
+          <input type="time" id="res-time" name="time" required>
+          <span class="error-msg" data-for="res-time"></span>
+        </div>
+        <div class="form-group">
+          <label for="res-guests">Guests</label>
+          <select id="res-guests" name="guests" required>
+            <option value="">Select</option>
+            <option>1</option><option>2</option><option>3</option><option>4</option>
+            <option>5</option><option>6</option><option>7+</option>
+          </select>
+          <span class="error-msg" data-for="res-guests"></span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="res-request">Special Request (optional)</label>
+        <textarea id="res-request" name="request" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary ripple full-width">Confirm Reservation</button>
+      <p class="form-success" id="form-success" role="status" aria-live="polite" hidden></p>
+    </form>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section id="testimonials" class="section testimonials">
+  <div class="container">
+    <p class="section-eyebrow reveal">Testimonials</p>
+    <h2 class="section-title reveal">Words From Our Guests</h2>
+    <div class="testimonial-slider reveal">
+      <div class="testimonial-track" id="testimonial-track">
+        <div class="testimonial-card">
+          <img width="100" height="100" src="https://picsum.photos/id/64/100/100" alt="Portrait of Priya Sharma" loading="lazy">
+          <div class="stars">★★★★★</div>
+          <p>"The truffle risotto alone is worth the visit. Service felt personal from the moment we walked in."</p>
+          <h3>Priya Sharma</h3>
+        </div>
+        <div class="testimonial-card">
+          <img width="100" height="100" src="https://picsum.photos/id/91/100/100" alt="Portrait of James Carter" loading="lazy">
+          <div class="stars">★★★★★</div>
+          <p>"Booked for a business dinner and it set the perfect tone — quiet, elegant, exceptional food."</p>
+          <h3>James Carter</h3>
+        </div>
+        <div class="testimonial-card">
+          <img width="100" height="100" src="https://picsum.photos/id/65/100/100" alt="Portrait of Neha Kapoor" loading="lazy">
+          <div class="stars">★★★★★</div>
+          <p>"Finally a place that does butter chicken and pasta equally well. Our new anniversary spot."</p>
+          <h3>Neha Kapoor</h3>
+        </div>
+      </div>
+      <div class="testimonial-dots" id="testimonial-dots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EVENTS ================= -->
+<section class="section events">
+  <div class="container">
+    <p class="section-eyebrow reveal">Upcoming Events</p>
+    <h2 class="section-title reveal">More Reasons To Visit</h2>
+    <div class="events-grid">
+      <div class="event-card reveal">
+        <img width="500" height="300" src="https://picsum.photos/id/1062/500/300" alt="Live music evening" loading="lazy">
+        <div class="event-body">
+          <span class="event-date">Every Sunday</span>
+          <h3>Live Music Evening</h3>
+          <p>Acoustic sets on the terrace every first Sunday.</p>
+          <a href="#reservations" class="btn btn-outline small ripple">Book Now</a>
+        </div>
+      </div>
+      <div class="event-card reveal">
+        <img width="500" height="300" src="https://picsum.photos/id/312/500/300" alt="Wine tasting night" loading="lazy">
+        <div class="event-body">
+          <span class="event-date">Every Saturday</span>
+          <h3>Wine Night</h3>
+          <p>Curated Italian & Continental pairings with our sommelier.</p>
+          <a href="#reservations" class="btn btn-outline small ripple">Book Now</a>
+        </div>
+      </div>
+      <div class="event-card reveal">
+        <img width="500" height="300" src="https://picsum.photos/id/365/500/300" alt="Birthday celebration setup" loading="lazy">
+        <div class="event-body">
+          <span class="event-date">By Request</span>
+          <h3>Birthday Parties</h3>
+          <p>Custom decor, cake and a private corner of the dining room.</p>
+          <a href="#reservations" class="btn btn-outline small ripple">Book Now</a>
+        </div>
+      </div>
+      <div class="event-card reveal">
+        <img width="500" height="300" src="https://picsum.photos/id/119/500/300" alt="Corporate dinner event" loading="lazy">
+        <div class="event-body">
+          <span class="event-date">Mon – Fri</span>
+          <h3>Corporate Events</h3>
+          <p>Private dining rooms with AV support for up to 40 guests.</p>
+          <a href="#reservations" class="btn btn-outline small ripple">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section faq">
+  <div class="container faq-grid">
+    <div class="faq-heading reveal">
+      <p class="section-eyebrow">FAQ</p>
+      <h2 class="section-title">Good To Know</h2>
+      <p>Can't find your answer? <a href="#contact">Contact us</a> directly.</p>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Do you provide home delivery?<i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-answer"><p>Yes, we deliver within a 7 km radius via our own delivery team and major food apps.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Do you accept online payments?<i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-answer"><p>We accept all major cards, UPI, and net banking, both in-restaurant and for online orders.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Can I book for birthday parties?<i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-answer"><p>Absolutely — let us know your date and headcount in the reservation form's special request field.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Is parking available?<i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-answer"><p>Yes, complimentary valet parking is available for all dine-in guests.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section contact">
+  <div class="container">
+    <p class="section-eyebrow reveal">Contact</p>
+    <h2 class="section-title reveal">Visit Or Reach Us</h2>
+    <div class="contact-grid">
+      <div class="contact-map reveal">
+        <div class="map-consent" id="map-consent">
+          <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+          <p>The map is loaded from Google Maps, which may set cookies and see your IP address.</p>
+          <p class="map-address" data-address>12 Vista Lane, Marina District, Mumbai</p>
+          <button type="button" class="btn btn-primary" id="load-map-btn">Load map</button>
+          <a class="map-link" id="map-link" href="#" target="_blank" rel="noopener">Open in Google Maps</a>
+        </div>
+      </div>
+      <div class="contact-details reveal">
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-location-dot"></i> <span data-address>12 Vista Lane, Marina District, Mumbai</span></li>
+          <li><i class="fa-solid fa-phone"></i> <a href="#" data-phone="tel" data-phone-text></a></li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:hello@bellavistarestaurant.com">hello@bellavistarestaurant.com</a></li>
+          <li><i class="fa-solid fa-clock"></i> Mon–Sun · 11:00 AM – 11:00 PM</li>
+        </ul>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form reveal" id="contact-form" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="c-name">Name</label>
+          <input type="text" id="c-name" name="name" required>
+          <span class="error-msg" data-for="c-name"></span>
+        </div>
+        <div class="form-group">
+          <label for="c-email">Email</label>
+          <input type="email" id="c-email" name="email" required>
+          <span class="error-msg" data-for="c-email"></span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="c-message">Message</label>
+        <textarea id="c-message" name="message" rows="4" required></textarea>
+        <span class="error-msg" data-for="c-message"></span>
+      </div>
+      <button type="submit" class="btn btn-primary ripple">Send Message</button>
+      <p class="form-success" id="contact-success" role="status" aria-live="polite" hidden></p>
+    </form>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <a href="#home" class="logo footer-logo">
+        <span class="logo-icon"><i class="fa-solid fa-utensils"></i></span>
+        <span class="logo-text">Bella Vista</span>
+      </a>
+      <p>Fine Italian, Continental & Indian dining in the heart of Mumbai since 2004.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reservations">Reservations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Menu</h3>
+      <ul>
+        <li><a href="#menu">Starters</a></li>
+        <li><a href="#menu">Main Course</a></li>
+        <li><a href="#menu">Pizza & Pasta</a></li>
+        <li><a href="#menu">Indian</a></li>
+        <li><a href="#menu">Desserts</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Newsletter</h3>
+      <p>Get news on seasonal menus and events.</p>
+      <form class="newsletter-form" id="newsletter-form">
+        <input type="email" name="email" placeholder="Your email" aria-label="Email for newsletter" required>
+        <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+      <p class="form-success" id="newsletter-success" role="status" aria-live="polite" hidden></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Bella Vista Restaurant. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ================= FLOATING BUTTONS ================= -->
+<a href="#" data-phone="wa" class="float-btn whatsapp-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+<a href="#" data-phone="tel" class="float-btn call-btn" aria-label="Call restaurant">
+  <i class="fa-solid fa-phone"></i>
+</a>
+<button id="back-to-top" class="float-btn top-btn" aria-label="Back to top" hidden>
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+# Dependencies (only appear if you ever add npm packages)
+node_modules/
+
+# Environment files / secrets - never commit these
+.env
+.env.*
+!.env.example
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+
+# Logs
+*.log
