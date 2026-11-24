@@ -74,7 +74,7 @@ Scroll through the page or use the top navigation to jump between sections. Use 
 
 ## Live Demo
 
-Live Demo: Not deployed yet
+Live Demo: https://restaurant-website-qn1z.netlify.app/
 
 ## Future Improvements
 
